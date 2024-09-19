@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>The New Galaxy | Play Today With Friends! </title>
+        <script src="./JS/jquery-3.7.1.min.js"></script>
+        <script src="./JS/footerheaderscript.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="gray">
+    <div style="margin-left:5%; margin-right:5%; margin-top:2%; margin-bottom:2%;">
+        <div class="gallery">
+            <div class="item">
+                <img src="./Images/Gallery/Image1.png">
+            </div>
+            <div class="item">
+                <img src="./Images/Gallery/Image2.png">
+            </div>
+            <div class="item">
+                <img src="./Images/Gallery/Image3.png">
+            </div>
+            <div class="item">
+                <img src="./Images/Gallery/Image4.png">
+            </div>
+            <div class="item">
+                <img src="./Images/Gallery/Image5.png">
+            </div>
+            <div class="item">
+                <img src="./Images/Gallery/Image6.png">
+            </div>
+            <div class="item">
+                <img src="./Images/Gallery/Image7.png">
+            </div>
+            <div class="item">
+                <img src="./Images/Gallery/Image8.png">
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px;
+    }
+    .item {
+        margin: 10px;
+        border: 2px solid #ddd;
+        overflow: hidden;
+        width: calc(25% - 20px);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+    .item img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .item:hover {
+        transform: scale(1.05);
+        border-color: #333;
+    }
+    @media (max-width: 768px) {
+        .item {
+            width: calc(50% - 20px);
+        }
+    }
+    @media (max-width: 480px) {
+        .item {
+            width: calc(100% - 20px);
+        }
+    }
+</style>
+<script>window.onload = function() {document.getElementById("header").style.background="#484848";}</script>
+</html>

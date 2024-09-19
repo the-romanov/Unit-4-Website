@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>The New Galaxy | Play Today With Friends! </title>
+        <script src="./JS/jquery-3.7.1.min.js"></script>
+        <script src="./JS/footerheaderscript.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="gray">
+    <div style="position:relative;">
+    <img style="width:100%;justify-content: center; display: flex; align-items: center;" src="./Images/TheLore/TheLoreBackground.png">
+    <div id="purchase">
+        <h1 class="whitefurore" style="font-size: 3vw;">THANK YOU FOR YOUR PURCHASE.</h1><br>
+        <h3 style="font-size: 2vw; font-family: furore; color: #ffffff; -webkit-text-stroke-width: .05vw; -webkit-text-stroke-color: black; " >
+        Download the content below:</h3>
+        <button style="width: 20vw; height: 5vw; font-size: 2vw;" class="download-btn formboxes" id="download-btn">Download File</button>
+    <script>
+        document.getElementById('download-btn').addEventListener('click', function() {
+            var link = document.createElement('a');
+            link.href = './Downloads/game.txt'; 
+            link.download = 'game.txt';
+            document.body.appendChild(link);
+            link.click(); 
+            document.body.removeChild(link);
+        });
+    </script><style>
+            #purchase {
+  position: absolute;
+  width:50%;
+  height:30%;
+  z-index:0;
+  top: 50%;
+  left: 0%;
+  padding:5%;
+  transform: translate(30%, -70%);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+</style></div></div></body>
+<script>window.onload = function() {document.getElementById("divisor").remove(); document.getElementById("header").style.background="#484848"; document.getElementById("footer").style.background="#484848";}</script>
+</html>

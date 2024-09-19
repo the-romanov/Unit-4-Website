@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>The New Galaxy | Play Today With Friends! </title>
+        <script src="./JS/jquery-3.7.1.min.js"></script>
+        <script src="./JS/footerheaderscript.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="gray">
+    <div style="margin:2%; text-align: center;">
+        <img style="width:30%; margin:2%;" src="./Images/Multiplayer/Multiplayer.png">
+    </div>
+        <!--Region Sidebar-->
+        <div style="justify-content: left; align-items: center; display: flex;">
+        <div style="justify-content: flex-start; align-items: center; flex-direction: column; display: flex; margin-left: 5%; width:14%;">
+            <button class="buttons width100"><img class="width100" src="./Images/Multiplayer/CreateAServer.png"></button>
+            <img class="sidemenu" src="./Images/Multiplayer/Region.png">
+            <button id ="eu" class="buttons sidemenu" onclick="server('eu')"><img class="region width100" src="./Images/Multiplayer/Europe.png"></button>
+            <button id ="na" class="buttons sidemenu" onclick="server('na')"><img class="region width100" src="./Images/Multiplayer/NorthAmerica.png"></button>
+            <button id ="sa" class="buttons sidemenu" onclick="server('sa')"><img class="region width100" src="./Images/Multiplayer/SouthAmerica.png"></button>
+            <button id ="as" class="buttons sidemenu" onclick="server('as')"><img class="region width100" src="./Images/Multiplayer/Asia.png"></button>
+            <button id ="oc" class="buttons sidemenu" onclick="server('oc')"><img class="region width100" src="./Images/Multiplayer/Oceania.png"></button>
+            <button id ="af" class="buttons sidemenu" onclick="server('af')"><img class="region width100" src="./Images/Multiplayer/Africa.png"></button>
+        </div>
+        <!--Divider-->
+        <div style="width: 2.2%;">
+            <img style="margin: 20%; width: 32%;" src="./Images/Multiplayer/Divider.png">
+        </div>
+        <!--Server List-->
+        <div class="width100">
+            <div id="ID1" class="mplobbies formboxes">
+                <div class="leftmp">
+                <p id="ID1Title" class="ppad whitefurore">ROLEPLAY FUN</p>
+            </div>
+                <div class="playerping">
+                    <p id="ID1Ping" class="stats whitefurore">0 MS</p>
+                    <p id="ID1Players" class="stats whitefurore">00/50</p>
+                </div>
+                <div class="joinbutton">
+                    <button id="ID1Join" class="buttons sidemenu width100"><img class="width100" src="./Images/Multiplayer/Join.png"></button>
+                </div>
+            </div>
+            <div id="ID2" class="mplobbies formboxes">
+                <div class="leftmp">
+                <p id="ID2Title" class="ppad whitefurore">ROLEPLAY FUN</p>
+            </div>
+                <div class="playerping">
+                    <p id="ID2Ping" class="stats whitefurore">0 MS</p>
+                    <p id="ID2Players" class="stats whitefurore">00/50</p>
+                </div>
+                <div class="joinbutton">
+                    <button id="ID2Join" class="buttons sidemenu width100"><img class="width100" src="./Images/Multiplayer/Join.png"></button>
+                </div>
+            </div>
+            <div id="ID3" class="mplobbies formboxes">
+                <div class="leftmp">
+                <p id="ID3Title" class="ppad whitefurore">ROLEPLAY FUN</p>
+            </div>
+                <div class="playerping">
+                    <p id="ID3Ping" class="stats whitefurore">0 MS</p>
+                    <p id="ID3Players" class="stats whitefurore">00/50</p>
+                </div>
+                <div class="joinbutton">
+                    <button id="ID3Join" class="buttons sidemenu width100"><img class="width100" src="./Images/Multiplayer/Join.png"></button>
+                </div>
+            </div>
+            <div id="ID4" class="mplobbies formboxes">
+                <div class="leftmp">
+                <p id="ID4Title" class="ppad whitefurore">ROLEPLAY FUN</p>
+            </div>
+                <div class="playerping">
+                    <p id="ID4Ping" class="stats whitefurore">0 MS</p>
+                    <p id="ID4Players" class="stats whitefurore">00/50</p>
+                </div>
+                <div class="joinbutton">
+                    <button id="ID4Join" class="buttons sidemenu width100"><img class="width100" src="./Images/Multiplayer/Join.png"></button>
+                </div>
+            </div>
+            <div id="ID5" class="mplobbies formboxes">
+                <div class="leftmp">
+                <p id="ID5Title" class="ppad whitefurore">ROLEPLAY FUN</p>
+            </div>
+                <div class="playerping">
+                    <p id="ID5Ping" class="stats whitefurore">0 MS</p>
+                    <p id="ID5Players" class="stats whitefurore">00/50</p>
+                </div>
+                <div class="joinbutton">
+                    <button id="ID5Join" class="buttons sidemenu width100"><img class="width100" src="./Images/Multiplayer/Join.png"></button>
+                </div>
+            </div>
+            <div id="ID6" class="mplobbies formboxes">
+                <div class="leftmp">
+                <p id="ID6Title" class="ppad whitefurore">ROLEPLAY FUN</p>
+            </div>
+                <div class="playerping">
+                    <p id="ID6Ping" class="stats whitefurore">0 MS</p>
+                    <p id="ID6Players" class="stats whitefurore">00/50</p>
+                </div>
+                <div class="joinbutton">
+                    <button id="ID6Join" class="buttons sidemenu width100"><img class="width100" src="./Images/Multiplayer/Join.png"></button>
+                </div>
+            </div>
+            <div id="ID7" class="mplobbies formboxes">
+                <div class="leftmp">
+                <p id="ID7Title" class="ppad whitefurore">ROLEPLAY FUN</p>
+            </div>
+                <div class="playerping">
+                    <p id="ID7Ping" class="stats whitefurore">0 MS</p>
+                    <p id="ID7Players" class="stats whitefurore">00/50</p>
+                </div>
+                <div class="joinbutton">
+                    <button id="ID7Join" class="buttons sidemenu width100"><img class="width100" src="./Images/Multiplayer/Join.png"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="justify-content: flex-start; align-items: center; margin-left: 20%; display: flex;">
+        <h1 id="pagenum" class="whitefurore stats">Page: 1/1</h1>
+        <button style="width:3%" class="buttons" onclick="goPrevious()"><img class="width100" src="./Images/Multiplayer/LeftButton.png"></button>
+        <button style="width:3%" class="buttons" onclick="goNext()"><img class="width100" src="./Images/Multiplayer/RightButton.png"></button>
+        <div style="margin-left: 2%; width:50%;" id="search" class="mplobbies formboxes">
+        <img style="width:10%" src="./Images/Multiplayer/Search.png">
+        <input class="formboxes" style="width:100%; height:2vw; font-size: 2vw;" type="server" id="server" name="server">
+        </div>
+    </div>
+</body><style>
+    .sidemenu{
+        width:70%;
+        margin:10%;
+    }
+    .mplobbies{
+        width: 75%;
+        justify-content: space-between; 
+        display: flex;
+    }
+    .ppad{
+        padding-left: 1%;
+        font-size: 3vw;
+    }
+    .stats{
+        font-size: 2vw;
+    }
+    .leftmp{
+        justify-content: left;
+        width:100%;
+    }
+    .joinbutton{
+        width: 18%;
+    }
+</style><script>window.onload = function() {
+    document.getElementById("header").style.background="#484848"; document.getElementById("footer").style.background="#484848"; document.getElementById("divisor").remove(); }
+    $(document).ready(alert("The Front-End features only work (i.e buttons doing nothing or something. No back-end implementation is added.)"));</script>
+</html>

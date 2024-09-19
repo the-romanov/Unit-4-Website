@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>The New Galaxy | Play Today With Friends! </title>
+        <script src="./JS/jquery-3.7.1.min.js"></script>
+        <script src="./JS/footerheaderscript.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="gray">
+    <div style="position:relative;">
+    <img style="width:100%; z-index: 0; justify-content: center; display: flex; align-items: center;" src="./Images/PreOrder/PreOrderBackground.png">
+    <div id="preorder">
+        <h1 style="font-size: 5vw;"class="whitefuroretext">READY TO VENTURE?</h1><br>
+        <h3 style="font-size: 2vw; font-family: furore; color: #ffffff; -webkit-text-stroke-width: .05vw; -webkit-text-stroke-color: black; " >
+        Look no further! Pre-Order your next adventure!</h3>
+        <div style="margin:2%; justify-content: center; align-items: left; display: flex;">
+            <h3 class="details">Name:</h3>
+            <input style="width:30%;" class="formboxes inputbox" type="server" id="server" name="server">
+            <h3 class="details">EMail:</h3>
+            <input style="width:60%;" class="formboxes inputbox" type="server" id="server" name="server">
+        </div>
+        <div style="margin:2%; justify-content: center; align-items: left; display: flex;">
+            <h3 class="details">Card Number:</h3>
+            <input class="formboxes inputbox" type="server" id="server" name="server">
+            <h3 class="details">CVV:</h3>
+            <input style="width:10%;" class="formboxes inputbox" type="server" id="server" name="server">
+        </div>
+        <div style="margin:2%; justify-content: center; align-items: left; display: flex;">
+            <h3 class="details">Expiry:</h3>
+            <input style="width:30%;" class="formboxes inputbox" type="server" id="server" name="server">
+            <h3 class="details">Country:</h3>
+            <input style="width:40%;" class="formboxes inputbox" type="server" id="server" name="server">
+            <h3 class="details">Postcode:</h3>
+            <input style="width:40%;" class="formboxes inputbox" type="server" id="server" name="server">
+        </div>
+        <button style="width:20%;" class="buttons" onclick="buy()"><img width="100%" src="Images/Header/PreOrderNoBG.png"></button>
+        </div>
+    </div>
+        <style>
+            .inputbox{
+                height:2vw;
+                font-size: 1.5vw;
+                margin-left:3%;
+                margin-right:3%;
+            }
+            .details{
+                font-size: 2vw;
+                font-family: furore;
+                color: #ffffff;
+            }
+            #preorder {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  padding:5%;
+  transform: translate(-0%, -30%);
+  text-align: right;
+  justify-content: end;
+  background-color: rgba(0, 0, 0, 0); /* Semi-transparent background */
+  color: white;
+}
+        </style>
+    </div>
+</div>
+</body>
+<script>
+    function buy() {
+        location.assign("payment-complete.html");
+    }
+  window.onload = function() {
+  document.getElementById("divisor").remove();
+  $(document).ready(alert("Pressing the pre-order button on the checkout page will get you to the download section.)"));
+  }
+</script>
+</html>

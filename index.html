@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>The New Galaxy | Play Today With Friends! </title>
+        <script src="./JS/jquery-3.7.1.min.js"></script>
+        <script src="./JS/footerheaderscript.js"></script>
+        <script src="./JS/audiocontrol.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <div id="mailing-list">
+        <h1 style="font-size: 2vw;" class="whitefurore">Join Our Mailing List</h1><br>
+        <h2 style="font-size: 1vw;" class="whitefurore">Subscribe to our newsletter to get the latest updates.</h2>
+        <input style="width: 25vw; height: 3vw; font-size: 2vw;" class="formboxes" type="email" placeholder="Enter your email">
+        <button style="width: 12vw; height: 5vw; font-size: 2vw" class="formboxes" id="subscribe-btn">Subscribe</button>
+        <button style="width: 8vw; height: 5vw; font-size: 2vw; float:right" class="formboxes" id="close-btn">Close</button>
+    </div>
+    <script>
+        // Wait 5 seconds and then display the mailing list div
+        setTimeout(function() {
+            document.getElementById('mailing-list').style.display = 'block';
+        }, 5000); // 5000 milliseconds = 5 seconds
+        document.getElementById('close-btn').addEventListener('click', function() {
+            
+            document.getElementById('mailing-list').style.display = 'none';});
+
+            document.getElementById('subscribe-btn').addEventListener('click', function() {
+            var emailInput = document.getElementById('email-input');
+            var email = emailInput.value.trim();
+            var successMessage = document.getElementById('success-message');
+
+            if (validateEmail(email)) {
+                successMessage.style.display = 'block';
+                emailInput.value = ''; // Clear the input field
+                // Here, you would typically also send the email to your server
+                // For example: sendEmailToServer(email);
+            } else {
+                alert('Please enter a valid email address.');
+            }
+        });
+
+        // Function to validate email address
+        function validateEmail(email) {
+            var re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(email);
+        }
+    </script>
+    <body class="black">
+        <audio id="myAudio" loop autoplay>
+            <source src="Audio/MainMenu.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <div style="height: 100%;">
+            <div style="width:100%;">
+                <img id="flyscreen" style="width:10%; position: absolute; right:-10%" src="./Images/Index/FlyingBoyScreen.png">
+                
+            <img style="width:100%" src="./Images/Index/FrontPage1.png">
+            <h1 class="furorenostroke opentext" style="opacity: 0; margin: 5%; font-size: 5vw; position: absolute; text-align: center; transform: translate(-0%, -300%);">GALAXIES FAR, <br> FAR, AWAY...</h1>
+        </div>
+        <div style="width:100%;">
+            <img id="flyfalcon" style="width:20%; position: absolute; right:-20%; transform: translateY(400%) rotate(20deg);" src="./Images/Index/Falcon.png">
+            <style>
+                #flyscreen {
+                transform: translateY(50%);
+                }
+                #flyfalcon {
+                    transform: rotate(50deg);
+                }
+            </style>
+            <script>
+                $(document).ready(function(){
+                    function animateImage2() {
+                        $('#flyscreen').css({right: '-20%'}).animate({
+                            right: '100%',
+                        }, 5000, function(){
+                            setTimeout(animateImage2, 5000); // Wait 5 seconds before repeating
+                        });
+                    }
+                    
+                    animateImage2();
+                });
+                $(document).ready(function(){
+                    function animateImage() {
+                        $('#flyfalcon').css({right: '-20%', transform: 'translateY(400%) rotate(0deg)'}).animate({
+                            right: '100%',
+                        }, 5000, function(){
+                            setTimeout(animateImage, 5000); // Wait 5 seconds before repeating
+                        });
+                    }
+                    
+                    animateImage();
+                });
+            </script>
+            <h1 class="opentext furorenostroke" style="opacity: 0; margin: 5%; font-size: 5vw; position: absolute; text-align: center; transform: translate(50%, -0);">UNITE TOGETHER<br>IN HARMONY</h1>
+            <img style="width:100%" src="./Images/Index/FrontPage2.png">
+        </div>
+    <div style="height: 50vw;">    
+        <h1 class="opentext furorenostroke" style="margin: 5%; opacity: 0; font-size: 5vw; position: absolute; text-align: center; transform: translate(40%, -0);">FOR THE ULTIMATE<br>INTERACTION</h1>
+        <img style="transform: translate(50.55%, 54.8%); width:50%;" src="./Images/Index/VideoFrame.png">
+    <!-- YouTube video iframe (initially hidden) -->
+    <iframe id="youtube-video" class="video-iframe" 
+            src="https://www.youtube.com/embed/pD7FB8wSyhw" 
+            frameborder="0" z-index="2"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+            <style>
+                #youtube-video {
+                    width:45vw;
+                    transform: translate(-50.25%, 55%);
+                    height:25vw;
+                }
+            </style>
+    </div>
+        <div style="height:2vh; background: linear-gradient(to top, #484848 0%, #000000 100%);"></div>
+        <div style="height:75%; background: linear-gradient(to bottom, #484848 0%, #000000 100%);">
+        <div style="width:100%; text-align: center; padding: 2%;"><h1 style="font-size: 5vw; opacity: 0;" class="furorenostroke opentext">Embrace a community!</h1></div>
+        <div style="justify-content: left; align-items: center; display: flex;">
+            <div class="sidepre footerbuttonsimage">
+                <img style="width:60%; float:left;" src="./Images/Index/DeathStar.png">
+            </div>
+            <div style="width: 100%; text-align: center; justify-content: center;">
+                <h2 style="font-size: 3vw;" class="furorenostroke">PRE-ORDER FOR</h2>
+                <h2 style="font-family: furore; color: rgb(255, 255, 0); font-size: 4vw;">HALF PRICE</h2>
+                <br>
+                <h3 style="text-decoration: line-through; color: rgb(255, 0, 0); font-size: 2vw; transform: rotate(-20deg); float: left;">£29.99</h3>
+                <button style="width: 80%;" class="buttons" onclick="preOrderPage()"><img width="100%" src="Images/Index/BuyNow.png"></button>
+                <h3 style="color: rgb(0, 255, 0); font-size: 5vw;">£14.99</h3>
+            </div>
+            <div class="sidepre footerbuttonsimage">
+                <img style="width:70%; float:right;" src="./Images/Index/FlyingBoy.png">
+            </div>
+            </div>
+        </div>
+        </div>
+</body>
+<style>
+    .sidepre{
+        margin:3%;
+    }
+    .furorenostroke{
+        color: #ffffff; 
+        font-family: furore;
+    }
+    #mailing-list {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            left:14vw;
+            right:14vw;
+            width:70vw;
+            height:12vw;
+            position:fixed;
+            z-index: 3;
+            display: none;
+            padding: 2%;
+            background-color: #333333;
+            border: 5px solid #000000;
+            text-align: center;
+            margin-top: 20px;
+        }
+</style><script>
+    $(document).ready(function(){$(".opentext").animate({opacity: 1}, 1000);});
+    window.onload = function() {document.getElementById("divisor").remove();}</script>
+</html>

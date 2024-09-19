@@ -1,0 +1,89 @@
+*{margin:0;
+overflow-x: hidden;}
+h1, h2, h3, p{
+  font-family: 'Futura', sans-serif;
+}
+@font-face {
+  font-family: "furore";
+  src: url("Fonts/Furore-webfont.woff") format('woff');
+}
+.headersize{
+  justify-content: center; 
+  align-items: center; 
+  display:flex
+}
+.whitefuroretext {
+  color: #ffffff; 
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black; 
+  font-family: furore;
+}
+.width100{
+  width: 100%;
+}
+.mainbit{
+  color: #ffffff;
+  font-family: furore; 
+  padding:3%;
+}
+.whitefurore{
+  color: #ffffff;
+  font-family: furore; 
+}
+.formboxes{
+  background-color: #333333; 
+  border-radius: 15px;
+  border: 2px solid white;
+  color: white;
+  font-size: 200%;
+}
+.sidebar{
+  margin-top: 2%;
+  margin:5%;
+  margin-left: 10%;
+  width:80%;
+}
+.socials{
+  margin-top: 1%;
+  width:6%;
+  height:6%;
+margin-top: 1%;
+width:6%;
+height:6%;
+}
+.whitetext{
+  color:#ffffff;
+color:#ffffff;
+}
+.buttons{
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  outline: none;
+background-color: transparent;
+background-repeat: no-repeat;
+border: none;
+cursor: pointer;
+outline: none;
+}
+.footerbuttons{
+margin: 0 10px;
+width:20%;
+display: inline-block;
+margin: 0 10px;
+width:20%;
+display: inline-block;
+}
+.footerbuttonsimage{
+  width: 100%;
+width: 100%;
+}
+.black{
+  background-color: #000000;
+background-color: #000000;
+}
+.gray{
+  background-color: #484848;
+background-color: #484848;
+}
